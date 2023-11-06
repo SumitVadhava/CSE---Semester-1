@@ -1,30 +1,30 @@
 #include<stdio.h>
+#include<string.h>
 struct Book{
-	char Book_Title[1000];
-	char Book_Author[1000];
-	char Book_Publication[1000];
-	float Price[1000];
-	
+	char Book_Title[30];
+	char Book_Author[30];
+	char Book_Publication[30];
+	int price;
 };
 int main(){
-	struct Book b1[1000];
+	struct Book b[3];
 	int i;
-	for(i=1;i<=3;i++){
-	printf("Enter Book Name=");
-	gets(b1[i].Book_Title);
-	printf("Enter Book Author=");
-	gets(b1[i].Book_Author);
-	printf("Enter Book Publication=");
-	gets(b1[i].Book_Publication);
-	printf("Enter Book Price=");
-	scanf("%f",&b1[i].Price);
+	for(i=0;i<3;i++){
+		printf("Enter Book Name=");
+		scanf("%s",b[i].Book_Title);
+		printf("Enter Book Author=");
+		scanf("%s",b[i].Book_Author);
+		printf("Enter Book Publication=");
+		scanf("%s",b[i].Book_Publication);
+		printf("Enter Book Price=");
+		scanf("%d",&b[i].price);
 	}
-	printf("\n\n");
-	for(i=1;i<=3;i++){
-	printf("Book Name:%s\n",b1[i].Book_Title);
-	printf("Book Author:%s\n",b1[i].Book_Author);
-	printf("Book Publication:%s\n",b1[i].Book_Publication);
-	printf("Book Price:%f",b1[i].Price);
-	}
-	return 0;
+	for(i=0;i<3;i++){
+		printf("\nBook Name=%s",b[i].Book_Title);
+		printf("\nBook Author=%s",b[i].Book_Author);
+		printf("\nBook Publication=%s",b[i].Book_Publication);
+		printf("\nBook Price=%d",b[i].price);
+		printf("\n\n");
+			}
+			return 0;
 }
