@@ -14,14 +14,14 @@ int main(){
 	scanf("%d",&s1.BirthDate);
 	printf("Enter Month Of Birth=");
 	scanf("%d",&s1.Birthmonth);
-    printf("\nEnter Birth Year=");
+        printf("Enter Birth Year=");
 	scanf("%d",&s1.Birthyear);
-	printf("\nEnter Empolyee Salary=");
+	printf("Enter Empolyee Salary=");
 	scanf("%d",&s1.Empolyee_Salary);
 	printf("%s\n",s1.Empolyee_Name);
 	printf("%d/",s1.BirthDate);
 	printf("%d/",s1.Birthmonth);
-	printf("%d/",s1.Birthyear);
+	printf("%d",s1.Birthyear);
 	printf("\n%d",s1.Empolyee_Salary);
 	return 0;
 }
