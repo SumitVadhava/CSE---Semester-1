@@ -17,8 +17,9 @@ int main(){
 		}
 		else{
 			character++;
-			ch=getc(f);
+			
 		}
+		ch=getc(f);
 	}
 	printf("lines=%d\nTab=%d\nSpace=%d\nCharacter=%d",ln,character,tab,space);
 	return 0;
